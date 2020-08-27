@@ -73,6 +73,6 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
-	@import './my.less';
+<style lang="scss" scoped>
+	@import './my.scss';
 </style>

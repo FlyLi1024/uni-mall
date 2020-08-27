@@ -56,8 +56,8 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
-	@import '../../style/mixin.less';
-	@import '../../style/animate.less';
-	@import './search.less';
+<style lang="scss" scoped>
+	@import '../../style/mixin.scss';
+	@import '../../style/animate.scss';
+	@import './search.scss';
 </style>

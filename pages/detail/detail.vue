@@ -14,6 +14,6 @@
 	}
 </script>
 
-<style lang="less">
-	@import './detail.less';
+<style lang="scss">
+	@import './detail.scss';
 </style>

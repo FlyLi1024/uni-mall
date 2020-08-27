@@ -1,4 +1,4 @@
-@static: '../../static';
+$static_path: '../../static';
 
 .search-header {
 	height: 128rpx;
@@ -24,7 +24,7 @@
 				flex-shrink: 0;
 				width: 70rpx;
 				height: 64rpx;
-				background: url('@{static}/search-icon.png') no-repeat center center;
+				background: url('#{$static_path}/search-icon.png') no-repeat center center;
 				background-size: 28rpx 28rpx;
 			}
 			input {
@@ -37,7 +37,7 @@
 				flex-shrink: 0;
 				width: 70rpx;
 				height: 64rpx;
-				background: url('@{static}/search-close.png') no-repeat center center;
+				background: url('#{$static_path}/search-close.png') no-repeat center center;
 				background-size: 28rpx 28rpx;
 			}
 		}
@@ -57,7 +57,7 @@
 	right: 0;
 	top: 128rpx;
 	background: #fff;
-	.border-top-1px(#eee);
+	@include border-top-1px(#eee);
 	.item {
 		position: relative;
 		height: 80rpx;
@@ -65,8 +65,8 @@
 		margin: 0 20rpx;
 		font-size: 28rpx;
 		color: #666;
-		.border-bottom-1px(#eee);
-		.text-over(1);
+		@include border-bottom-1px(#eee);
+		@include text-over(1);
 	}
 	.h128 {
 		height: 130rpx;

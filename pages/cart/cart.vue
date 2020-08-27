@@ -22,6 +22,6 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
-	@import './cart.less';
+<style lang="scss" scoped>
+	@import './cart.scss';
 </style>

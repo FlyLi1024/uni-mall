@@ -14,6 +14,6 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	@import './category.less';
+<style lang="scss" scoped>
+	@import './category.scss';
 </style>
