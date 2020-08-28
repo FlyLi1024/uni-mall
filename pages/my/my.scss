@@ -1,28 +1,29 @@
 .h20 {
-	height: 20upx;
+	height: 20rpx;
 	background: #f2f2f0;
 }
 .user-header {
-	height: 230upx;
-	background: #fe4070;
+	height: 240rpx;
+	background: url(../../static/head_bg.png) no-repeat center top;
+	background-size: cover;
 	color: #fff;
 	.header-tips {
-		font-size: 28upx;
+		font-size: 28rpx;
 		text-align: center;
 		position: relative;
-		top: 50upx;
+		top: 50rpx;
 	}
 	.header-login {
 		position: relative;
-		top: 80upx;
+		top: 80rpx;
 		background: #fff;
 		color: #fe4070;
-		width: 170upx;
-		height: 60upx;
-		line-height: 60upx;
+		width: 170rpx;
+		height: 60rpx;
+		line-height: 60rpx;
 		border: 0;
-		border-radius: 5upx;
-		font-size: 34upx;
+		border-radius: 5rpx;
+		font-size: 34rpx;
 		&:after {
 			display: none;
 		}
@@ -30,31 +31,57 @@
 			display: none;
 		}
 	}
+	&.haslogin{
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+		padding: 0 30rpx;
+		.info{
+			display: flex;
+			justify-content:flex-start;
+			align-items: center;
+		}
+		.pic,image{
+			display: block;
+			width: 80rpx;
+			height: 80rpx;
+			border-radius: 80rpx;
+			
+		}
+		.pic{
+			padding: 5rpx;
+			background-color: #FFFFFF;
+			margin-right: 15px;
+		}
+		.username{
+			
+		}
+	}
 }
 .my-order {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 30upx;
-	height: 90upx;
+	padding: 0 30rpx;
+	height: 90rpx;
 	color: #6a696e;
-	border-bottom: 1upx solid #ececec;
+	border-bottom: 1rpx solid #ececec;
 	.text {
-		font-size: 34upx;
-		line-height: 90upx;
+		font-size: 30rpx;
+		line-height: 90rpx;
 		display: flex;
 		align-items: center;
 		.iconfont {
-			padding-right: 10upx;
-			font-size: 38upx;
+			padding-right: 10rpx;
+			font-size: 38rpx;
 		}
 	}
 	.more {
-		font-size: 24upx;
+		font-size: 26rpx;
 		color: #6a696e;
 		.iconfont {
-			font-size: 24upx;
-			padding-left: 10upx;
+			font-size: 26rpx;
+			padding-left: 10rpx;
 		}
 	}
 }
@@ -62,25 +89,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 120upx;
-	border-bottom: 1upx solid #ececec;
+	height: 120rpx;
+	border-bottom: 1rpx solid #ececec;
 	.item {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 120upx;
+		height: 120rpx;
 		color: #6c6c6e;
-		font-size: 30upx;
+		font-size: 26rpx;
 		line-height: 1;
-		border-right: 1upx solid #ececec;
+		border-right: 1rpx solid #ececec;
 		&:last-of-type {
 			border-right: none;
 		}
 		.iconfont {
-			font-size: 50upx;
-			padding-bottom: 10upx;
+			font-size: 50rpx;
+			padding-bottom: 10rpx;
 		}
 	}
 }
@@ -88,23 +115,23 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1upx solid #ececec;
-	padding: 0 30upx;
-	height: 94upx;
+	border-bottom: 1rpx solid #ececec;
+	padding: 0 30rpx;
+	height: 94rpx;
 	.text {
 		display: flex;
 		align-items: center;
-		font-size: 32upx;
+		font-size: 30rpx;
 		color: #6a6a6e;
 		.iconfont {
-			font-size: 44upx;
-			padding-right: 20upx;
+			font-size: 44rpx;
+			padding-right: 20rpx;
 		}
 	}
 	.more {
 		.iconfont {
-			font-size: 24upx;
-			padding-left: 10upx;
+			font-size: 24rpx;
+			padding-left: 10rpx;
 			color: #6a696e;
 		}
 	}

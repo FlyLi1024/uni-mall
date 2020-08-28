@@ -4,6 +4,15 @@
 			<view class="header-tips">登录一下，与时尚零距离接触！</view>
 			<button class="header-login">去登录</button>
 		</view>
+		<!-- <view class="user-header haslogin">
+			<view class="info">
+				<view class="pic">
+					<image src="../../static/nav/nav1.png"></image>
+				</view>
+				<text class="userneame">欢迎您：FlyLi</text>
+			</view>
+			<text class="iconfont">&#xe65f;</text>
+		</view> -->
 		<view class="my-order">
 			<view class="text">
 				<!-- <text class="iconfont">&#xe600;</text> -->
@@ -57,9 +66,15 @@
 		<view class="user-item">
 			<view class="text">
 				<text class="iconfont">&#xe608;</text>
-				设置
+				设置中心
 			</view>
 			<view class="more"><text class="iconfont">&#xe65f;</text></view>
+		</view>
+		<view class="user-item">
+			<view class="text">
+				<text class="iconfont">&#xe60c;</text>
+				退出登录
+			</view>
 		</view>
 	</view>
 </template>
