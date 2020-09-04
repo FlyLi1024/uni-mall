@@ -1,3 +1,39 @@
+
 .setting{
-	
+	.header{
+		position: relative;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100rpx;
+		line-height: 100rpx;
+		background-color: #FE0036;
+		color: #fff;
+		font-size: 32rpx;
+		font-weight: 300;
+		.back{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100rpx;
+			padding: 0 10px;
+		}
+		.title{
+			text-align: center;
+			font-size: 36rpx;
+		}
+	}
+	&-item{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100rpx;
+		line-height: 100rpx;
+		padding: 0 30rpx;
+		font-size: 30rpx;
+		color: #666;
+		@include border-bottom-1px(#eee);
+	}
 }

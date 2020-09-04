@@ -1,0 +1,87 @@
+.address{
+	padding-bottom: 200rpx;
+	background-color: #F4F3F8;
+	.header{
+		position: fixed;
+		width: 100%;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100rpx;
+		line-height: 100rpx;
+		background-color: #FE0036;
+		color: #fff;
+		font-size: 32rpx;
+		font-weight: 300;
+		z-index: 2;
+		.back{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100rpx;
+			padding: 0 10px;
+		}
+		.title{
+			text-align: center;
+			font-size: 36rpx;
+		}
+	}
+	&-content{
+		padding-top: 100rpx;
+		.address-item{
+			margin-bottom: 20rpx;
+			color: #666;
+			font-size: 30rpx;
+			font-family: PingFang-SC-Regular;
+			background-color: #fff;
+			.iconfont{
+				padding-right:4px;
+				font-weight: 300;
+			}
+			.info{
+				padding: 0 25rpx;
+				position: relative;
+				@include border-bottom-1px(#eee);
+				.user{
+					display: flex;
+					justify-content: space-between;
+					line-height: 1;
+					padding-bottom: 20rpx;
+					padding-top: 40rpx;
+				}
+				.detail{
+					padding-bottom: 30rpx;
+				}
+			}
+			.option{
+				display: flex;
+				justify-content: space-between;
+				padding:20rpx 25rpx;
+				.is-default{
+					color: red;
+				}
+				.edde{
+					display: flex;
+					.edit{
+						margin-right: 20rpx;
+					}
+					
+				}
+			}
+		}
+	}
+	
+	.add{
+		position: fixed;
+		left: 0rpx;
+		bottom: 0rpx;
+		right:0rpx;
+		height: 100rpx;
+		line-height: 100rpx;
+		background-color: #FE0036;
+		text-align: center;
+		font-size: 36rpx;
+		color: #FFFFFF;
+	}
+}

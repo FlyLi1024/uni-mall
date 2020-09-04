@@ -22,13 +22,27 @@
 			"style": {
 				"navigationBarTitleText": "个人中心"
 			}
-		}, {
+		}, 
+		{
 			"path": "pages/setting/setting",
 			"style": {
 				"navigationBarTitleText": "设置中心"
 			}
-		}, {
-			"path": "pages/goods-detail/goods-detail",
+		}, 
+		{
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "收货地址管理"
+			}
+		}, 
+		{ 
+			"path": "pages/address/address-edit/address-edit",
+			"style": {
+				"navigationBarTitleText": "新增收货地址"
+			}
+		}, 
+		{
+			"path": "pages/detail/detail",
 			"style": {
 				"navigationBarTitleText": "商品详情"
 			}
@@ -38,9 +52,9 @@
 				"navigationBarTitleText": "搜索页"
 			}
 		}, {
-			"path": "pages/order-detail/order-detail",
+			"path": "pages/order/order",
 			"style": {
-				"navigationBarTitleText": "订单详情页"
+				"navigationBarTitleText": "订单列表页"
 			}
 		}
 	],

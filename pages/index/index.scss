@@ -1,78 +1,198 @@
 
-.search-wrap {
+.page-home{
+	.header{
+		position: relative;
+		height: 210rpx;
+		background: url(../../static/head_bg.png) no-repeat center top;
+		background-size: cover;
+		padding-top: 30rpx;
+		box-sizing: border-box;
+		.hotkey{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: fade-out(#fff,0.1);
+			font-size: 26rpx;
+			padding-left: 20rpx;
+			.content{
+				width: 650rpx;
+				// flex: 1;
+				// box-shadow: inset -10px 0 10px -10px red;
+				// margin-right: 50rpx;
+			}
+			/deep/ .uni-scroll-view-content{
+				display: flex;
+				&-webkit-scrollbar{
+					display: none;
+				}
+			}
+			.item{
+				display: inline-flex;
+				align-items: center;
+				padding:0 25rpx;
+				height: 90rpx;
+				white-space: nowrap;
+				box-sizing: border-box;
+				text{
+					padding: 5px 0;
+				}
+				&.actv{
+					text{
+						box-sizing: border-box;
+						border-bottom:5rpx solid fade-out(#fff,0.1);
+					}
+				}
+				&:last-of-type{
+					padding-right: 30rpx;
+				}
+			}
+			.more{
+				// width: 50rpx;
+				// flex: 1;
+				display: block;
+				width: 100%;
+				text-align: center;
+				// background-color: #ddd;
+			}
+		}
+	}
+}
+
+.search {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100upx;
-	padding: 0 20upx;
-	background: #fe3b0f;
-
-	.search-box {
+	height: 88rpx;
+	&-wrap {
+		flex: 1;
 		display: flex;
 		align-items: center;
-		width: 630upx;
-		height: 70upx;
-		background: #fff;
-		border-radius: 8upx;
-
+		height: 70rpx;
+		background: fade-out(#fff, 0.5);
+		border-radius: 6rpx;
+		margin-left: 20rpx;
+		font-size: 28rpx;
+		color:fade-out(#fff, 0.3);
 		.iconfont {
-			color: #bdbdbd;
-			font-size: 38upx;
-			margin-left: 10upx;
+			color:fade-out(#fff, 0.5);
+			font-size: 38rpx;
+			margin-left: 10rpx;
+			margin-right: 10rpx;
 		}
 	}
 
 	.news {
-		font-size: 54upx;
-		color: #fff;
-		padding-right: 5upx;
+		flex-shrink: 0;
+		font-size: 54rpx;
+		color: fade-out(#fff, 0.1);
+		padding: 0 25rpx;
 	}
 }
 
 .banner {
-	padding: 0 20upx 15upx;
-	// background: #fe3b0f;
-
+	margin-top: 20rpx;
+	padding: 0 20rpx 15rpx;
 	.swiper {
 		width: 100%;
-		height: 300upx;
-		border-radius: 10upx;
+		height: 300rpx;
+		border-radius: 10rpx;
 		overflow: hidden;
 	}
 
 	.swiper-item,img {
 		display: block;
 		width: 100%;
-		height: 150upx;
+		height: 150rpx;
 	}
 }
 
 .nav {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
 	flex-wrap: wrap;
-	border-bottom: 1upx solid #f1f1f1;
 
 	.nav-item {
-		flex: 1;
-		height: 200upx;
-		padding-top: 10upx;
+		width: 20%;
+		height: 180rpx;
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		font-size: 30upx;
+		font-size: 28rpx;
 		color: #626262;
 
 		image {
-			width: 100upx;
-			height: 100upx;
+			display: block;
+			width: 80rpx;
+			height: 80rpx;
 		}
 
 		.text {
-			padding-top: 20upx;
+			padding-top: 15rpx;
+		}
+	}
+}
+
+/* 公告 */
+.notice{
+	height: 170rpx;
+	// background-color: #f6f5fa;
+	padding: 15px;
+	padding-bottom: 50rpx;
+	box-sizing: border-box;
+	border-bottom:20rpx solid #f6f5fa;
+	&-content{
+		background-color: #f6f5fa;
+		width: 100%;
+		height: 100%;
+		border-radius: 100rpx;
+		font-size: 30rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		.icon-news{
+			color: #f23030;
+			flex-shrink: 0;
+			padding: 0 20rpx;
+			font-size: 46rpx;
+		}
+		.content{
+			flex: 1;
+			height: 60rpx;
+			padding-right: 15rpx;
+			overflow: hidden;
+			font-size: 26rpx;
+			.swiper{
+				width: 100%;
+				height: 100%;
+				.swiper-item{
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					text{
+						font-size: 28rpx;
+						color: #848281;
+						@include text-over(1);
+					}
+				}
+			}
+		}
+		.more{
+			flex-shrink: 0;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 0 20rpx 0 15rpx;
+			font-size: 24rpx;
+			color: #f23030;
+			// border-left: 1rpx solid #f23030;
+			box-shadow: -10rpx 0 30rpx -20rpx #aaa;
 		}
 	}
 }

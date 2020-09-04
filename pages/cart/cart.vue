@@ -1,12 +1,33 @@
 <template>
 	<view class="cart">
-		<view class="no-cart">
+		<view class="header">
+			<text>购物车</text>
+			<view class="edit" v-if="count>0">管理</view>
+		</view>
+		<view class="no-cart" v-if="count === 0">
 			<view class="icon"></view>
-			<text class="tips">购物车空空如也~</text>
-			<view class="btn">去购物</view>
+			<text class="tips">购物车竟然是空的</text>
+			<view class="btn">去首页逛逛</view>
 		</view>
 		
-		<view class="has-cart">
+		<view class="has-cart" v-if="count > 0">
+			<view class="" v-for="(item,index) in 5" :key="index">
+				aaa-{{index}}
+			</view>
+		</view>
+		<view class="count" v-if="count>0">
+			<view class="check-total">
+				<text class="iconfont">&#xe8df;</text>
+				<text>全选</text>
+			</view>
+			<view class="settlement">
+				<view>
+					合计<text class="sum">：&yen;50000</text>
+				</view>
+				<view class="close-account">
+					结算（{{count}}）
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -14,7 +35,9 @@
 <script>
 export default {
 	data() {
-		return {};
+		return {
+			count:0
+		};
 	},
 	onLoad() {
 		console.log('cart');
@@ -23,5 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	@import '../../style/mixin.scss';
 	@import './cart.scss';
 </style>

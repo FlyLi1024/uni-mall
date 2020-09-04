@@ -63,9 +63,9 @@
 			</view>
 			<view class="more"><text class="iconfont">&#xe65f;</text></view>
 		</view>
-		<view class="user-item">
+		<view class="user-item" @click="toSettingPage">
 			<view class="text">
-				<text class="iconfont">&#xe608;</text>
+				<text class="iconfont">&#xe64b;</text>
 				设置中心
 			</view>
 			<view class="more"><text class="iconfont">&#xe65f;</text></view>
@@ -81,11 +81,15 @@
 success
 
 <script>
-export default {
-	data() {
-		return {};
+export default{
+		methods:{
+			toSettingPage() {
+				uni.navigateTo({
+					url: '/pages/setting/setting'
+				})
+			},
+		}
 	}
-};
 </script>
 
 <style lang="scss" scoped>
