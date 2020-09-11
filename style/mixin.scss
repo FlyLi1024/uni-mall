@@ -85,8 +85,9 @@ $border-radius: 0rpx;
 @mixin text-over($line) {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
-	@if $line != 1{
+	@if $line == 1{
+		white-space: nowrap;
+	}@else{
 		display: -webkit-box;
 		-webkit-line-clamp: $line;
 		-webkit-box-orient: vertical;

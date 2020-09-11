@@ -1,10 +1,10 @@
 <template>
-	<view class="cart">
-		<view class="header">
-			<text>购物车</text>
-			<view class="edit" v-if="count>0">管理</view>
+	<view class="cart" :class="{'not':count <=0}">
+		<view class="header"  v-if="count != 0">
+			<text>购物车{{count}}</text>
+			<view class="edit">管理</view>
 		</view>
-		<view class="no-cart" v-if="count === 0">
+		<view class="no-cart" :class="{'not':count ===0}" v-if="count === 0">
 			<view class="icon"></view>
 			<text class="tips">购物车竟然是空的</text>
 			<view class="btn">去首页逛逛</view>
@@ -40,7 +40,7 @@ export default {
 		};
 	},
 	onLoad() {
-		console.log('cart');
+		console.log("cart");
 	}
 };
 </script>

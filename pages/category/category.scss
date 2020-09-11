@@ -1,3 +1,20 @@
 .category{
 	color: saddlebrown;
+	&-header{
+		height: 200rpx;
+		background: url(@/static/head_bg.png) no-repeat center top;
+		background-size: cover;
+	}
+	&-content{
+		.item{
+			position: relative;
+			height: 120rpx;
+			line-height: 120rpx;
+			color: #666;
+			font-size: 32rpx;
+			padding: 0 30rpx;
+			@include border-bottom-1px(#999);
+		}
+	}
+	
 }
